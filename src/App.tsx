@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, BarChart3, BrainCircuit, Check, ChevronDown, Code2, Database, Github, Layers3, Linkedin, Menu, Network, Workflow, X, Zap } from 'lucide-react'
+import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, BarChart3, BrainCircuit, Code2, Database, Github, Layers3, Linkedin, Menu, Network, Workflow, X, Zap } from 'lucide-react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { contact, projects, services, technologies } from './data/portfolio'
