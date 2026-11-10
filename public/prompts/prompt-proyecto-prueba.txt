@@ -1,43 +1,489 @@
-PROMPT DE REFERENCIA — DATA INTELLIGENCE / PORTAFOLIO
-Versión reconstruida a partir del sitio publicado. No es una transcripción literal del prompt original.
+# PROYECTO: DATA INTELLIGENCE — PORTAFOLIO WEB
 
-Actúa como diseñador UX/UI y desarrollador frontend senior especializado en portafolios tecnológicos. Diseña y construye un sitio web de portafolio conceptual para un perfil de Data Intelligence, enfocado en ciencia de datos, analítica, inteligencia artificial y soluciones tecnológicas.
+> PROMPT AMPLIADO DE REFERENCIA. Este documento se elaboró a partir de la estructura, el contenido y el diseño del proyecto publicado en `Above02/proyecto_prueba`. No se conserva una transcripción íntegra del prompt inicial original; por ello, esta versión describe detalladamente el resultado existente y funciona como una especificación reutilizable.
 
-OBJETIVO
-Presentar de forma profesional y contemporánea un perfil orientado a convertir datos en decisiones inteligentes. La página debe comunicar pensamiento analítico, rigor, claridad y dominio tecnológico sin recurrir a plantillas genéricas.
+## 1. Rol y objetivo
 
-DIRECCIÓN VISUAL
-- Estética tecnológica, editorial, minimalista y sofisticada.
-- Fondo azul muy oscuro/casi negro, superficies ligeramente más claras, texto gris frío y acentos azul claro.
-- Tipografía sans-serif moderna combinada con detalles monoespaciados para etiquetas técnicas.
-- Composición con mucho espacio negativo, líneas finas, pequeños indicadores, numeración y microtextos.
-- Hero con visualización abstracta de datos: núcleo, anillos orbitales, brillos y geometría CSS; evitar depender de imágenes de stock.
-- Animaciones sutiles de entrada y movimiento, con respeto a prefers-reduced-motion.
-- Diseño responsive, especialmente cuidado en pantallas móviles.
+Actúa como un equipo multidisciplinario integrado por:
 
-ESTRUCTURA
-1. Navbar con marca “DATA INTELLIGENCE”, navegación a Inicio, Perfil, Proyectos, Servicios y Contacto.
-2. Hero con titular “Transformando datos en decisiones inteligentes”, descripción, botones para explorar proyectos y contactar, y una visualización abstracta de datos.
-3. Perfil con introducción y tres pilares: Data Science & Machine Learning, Business Intelligence, Statistical Modeling & Analytics.
-4. Proyectos seleccionados presentados como casos conceptuales con categoría, descripción, etiquetas y recursos gráficos.
-5. Servicios/capacidades en tarjetas: análisis de datos, inteligencia artificial, business intelligence y automatización/tecnología.
-6. Stack tecnológico presentado como chips o etiquetas.
-7. Contacto con llamada a la acción, correo y enlaces sociales configurables.
-8. Footer minimalista con identidad y navegación de regreso al inicio.
+- Senior Frontend Developer.
+- UI/UX Designer especializado en productos digitales y portafolios.
+- Especialista en React, TypeScript y Vite.
+- Especialista en diseño responsive, accesibilidad y rendimiento.
+- Especialista en GitHub y despliegues con Vercel.
 
-CONTENIDO Y HONESTIDAD
-- Utiliza textos demostrativos editables y evita inventar clientes, certificaciones o resultados.
-- Aclara que los proyectos y escenarios son conceptuales/demostrativos cuando corresponda.
-- Centraliza datos de contacto, proyectos, servicios y tecnologías en módulos de datos separados.
-- No inventes direcciones, correos ni perfiles reales.
+Diseña y desarrolla un sitio web de portafolio conceptual llamado **DATA INTELLIGENCE**, enfocado en ciencia de datos, analítica, inteligencia artificial, business intelligence, modelado estadístico y automatización.
 
-TECNOLOGÍA
-- React + TypeScript + Vite.
-- CSS personalizado y Tailwind si aporta valor.
-- lucide-react para iconos.
-- GSAP y ScrollTrigger para animaciones suaves y controladas.
-- Componentes funcionales, estructura clara, accesibilidad básica y buen rendimiento.
-- No añadas dependencias innecesarias.
+El objetivo es comunicar una identidad profesional que convierta información compleja en conocimiento útil y decisiones inteligentes. El sitio debe transmitir criterio analítico, claridad, rigor, curiosidad y dominio tecnológico.
 
-ENTREGA
-Construye una página completa, responsive y lista para desplegar. Asegura navegación funcional, enlaces editables, jerarquía visual consistente y compilación sin errores. Incluye estados hover/focus y respeta la preferencia de movimiento reducido.
+No entregues únicamente una maqueta, una explicación o fragmentos aislados. Construye una experiencia web completa, coherente, responsive, mantenible y lista para desplegar.
+
+## 2. Infraestructura y reglas de trabajo
+
+### GitHub
+
+- Propietario: `Above02`.
+- Repositorio existente: `proyecto_prueba`.
+- Rama de trabajo: `main`.
+
+### Vercel
+
+- Proyecto existente: `proyecto_prueba`.
+- Equipo/cuenta: `Above02`.
+- El repositorio ya está conectado con el flujo de despliegue de Vercel.
+
+### Restricciones obligatorias
+
+1. Inspecciona el repositorio antes de modificar archivos.
+2. Trabaja sobre `Above02/proyecto_prueba`; no crees otro repositorio.
+3. Utiliza el proyecto Vercel existente `proyecto_prueba`; no crees otro proyecto.
+4. No cambies propietario, nombre, rama principal ni conexión GitHub–Vercel.
+5. No ejecutes `git init` ni reemplaces el remoto.
+6. Conserva la arquitectura que ya funcione y adapta el código existente.
+7. No sobrescribas archivos sin revisarlos.
+8. No publiques credenciales, tokens, contraseñas ni secretos.
+9. No inventes datos personales, clientes, certificaciones, métricas o resultados profesionales.
+10. Si una integración no está disponible, explica la limitación en vez de fingir que se completó.
+
+## 3. Stack tecnológico
+
+Utiliza tecnologías compatibles con el proyecto existente:
+
+- React 18.
+- TypeScript 5.
+- Vite 5.
+- Tailwind CSS 3 y CSS personalizado.
+- GSAP y ScrollTrigger para animaciones.
+- Lucide React para iconografía.
+- HTML semántico y componentes funcionales.
+
+Mantén las dependencias actuales siempre que sea posible. No agregues librerías por conveniencia si CSS, React o las dependencias instaladas ya resuelven la necesidad.
+
+El proyecto debe poder ejecutarse con:
+
+- `npm install`
+- `npm run dev`
+- `npm run build`
+- `npm run preview`
+
+La compilación debe validar TypeScript y generar el directorio `dist`.
+
+## 4. Dirección de arte e identidad visual
+
+### Concepto
+
+Un laboratorio editorial de datos: preciso, contemporáneo, minimalista y sofisticado. Evita el aspecto de plantilla corporativa genérica o dashboard administrativo.
+
+### Paleta y superficies
+
+- Fondo principal azul casi negro: `#080B12`.
+- Superficie secundaria: `#0E131D`.
+- Superficie alternativa: `#0C111A`.
+- Texto principal: `#E9EDF5`.
+- Texto secundario y muted: grises azulados cercanos a `#8A94A6`.
+- Líneas divisorias: blanco azulado con opacidad baja.
+- Acento azul claro: `#9DC5FF`.
+- Elementos luminosos: azules fríos y brillos discretos.
+
+Centraliza los colores en variables CSS para que puedan ajustarse sin buscar valores dispersos.
+
+### Tipografía
+
+- Utiliza Manrope o una sans-serif moderna para titulares y texto de interfaz.
+- Utiliza DM Mono o una tipografía monoespaciada equivalente para numeración, etiquetas técnicas, coordenadas y microcopy.
+- Mantén jerarquías claras, títulos grandes, interlineado cómodo y párrafos de lectura sencilla.
+- Los acentos de color deben destacar palabras concretas sin competir con el contenido.
+
+### Composición
+
+- Mucho espacio negativo.
+- Líneas horizontales finas.
+- Numeración de secciones.
+- Etiquetas técnicas pequeñas en mayúsculas.
+- Tarjetas con bordes sutiles, sin sombras pesadas.
+- Alineaciones limpias y consistentes.
+- Animaciones elegantes, nunca distractoras.
+
+### Visual principal del Hero
+
+Construye una visualización abstracta de datos mediante CSS y elementos HTML:
+
+- Halo luminoso difuminado.
+- Dos órbitas elípticas con bordes azulados.
+- Un núcleo circular con gradiente radial.
+- Cuadrícula técnica dentro del núcleo.
+- Etiqueta central `DATA IN MOTION`.
+- Pequeños indicadores y microtextos como `FIG. 001 / SYSTEMS` y `SIGNAL DETECTED`.
+- Un detalle de coordenadas o etiqueta de laboratorio como recurso estético, sin presentarlo como ubicación real.
+
+No dependas de una imagen de stock para esta visualización. No utilices Three.js ni WebGL para este recurso; debe ser ligero y resolverse con CSS.
+
+## 5. Arquitectura de la página y contenido
+
+### A. Navegación principal
+
+Crea una barra superior con:
+
+- Marca tipográfica `D.` y texto `DATA INTELLIGENCE`.
+- Enlaces: Inicio, Perfil, Proyectos, Servicios y Contacto.
+- Llamada a la acción `Hablemos`, que conduce a la sección de contacto.
+- Menú móvil accesible, con estado abierto/cerrado y cierre al seleccionar una sección.
+
+La navegación debe utilizar anclas internas y respetar el desplazamiento suave. Asegura que el menú móvil no tape el contenido ni permanezca abierto después de navegar.
+
+### B. Hero — propuesta de valor
+
+Identificador de sección: `inicio`.
+
+Etiqueta superior:
+`DATA / SCIENCE / INTELLIGENCE`.
+
+Titular:
+`Transformando datos en decisiones inteligentes.`
+
+Descripción:
+`Analítica de datos, inteligencia artificial y soluciones tecnológicas para resolver problemas reales.`
+
+Acciones:
+- `Explorar proyectos`, enlazada a `#proyectos`.
+- `Contactar`, enlazada a `#contacto`.
+
+Incluye una pequeña guía visual de desplazamiento, por ejemplo `01 — 05` y `SCROLL TO EXPLORE`.
+
+El Hero debe tener una composición de dos columnas en escritorio: texto a la izquierda y visualización abstracta a la derecha. En móvil debe convertirse en una sola columna, con el contenido primero y el visual después.
+
+### C. Perfil — enfoque y especialidades
+
+Identificador: `perfil`.
+
+Kicker:
+`01 / PERFIL` y `ANALYTICAL THINKING × TECHNOLOGY`.
+
+Titular:
+`Más allá de los datos.`
+
+Texto introductorio:
+`Combinamos pensamiento analítico, modelado estadístico y tecnología para convertir información compleja en soluciones comprensibles y accionables.`
+
+Microcopy:
+`CURIOSIDAD COMO MÉTODO. CLARIDAD COMO RESULTADO.`
+
+Presenta tres pilares:
+
+1. **Data Science & Machine Learning**
+   - Descripción: `De los datos al modelo: exploración, experimentación y predicción.`
+   - Iconografía relacionada con inteligencia artificial o redes neuronales.
+
+2. **Business Intelligence**
+   - Descripción: `Información clara para entender el presente y orientar decisiones.`
+   - Iconografía relacionada con gráficas o análisis.
+
+3. **Statistical Modeling & Analytics**
+   - Descripción: `Métodos cuantitativos para explicar relaciones y medir escenarios.`
+   - Iconografía relacionada con redes, estadística o modelado.
+
+Cada pilar debe tener un índice numérico, un icono y una descripción breve. En escritorio se muestran en tres columnas; en móvil se apilan verticalmente.
+
+### D. Proyectos seleccionados
+
+Identificador: `proyectos`.
+
+Kicker:
+`02 / TRABAJO SELECCIONADO` y `CONCEPTUAL CASE STUDIES`.
+
+Titular:
+`Ideas que toman forma.`
+
+Descripción:
+`Una selección de ejercicios conceptuales que muestran cómo abordamos los retos desde los datos.`
+
+Presenta tres casos conceptuales en una lista editorial. Cada proyecto incluye número, categoría, recurso gráfico abstracto, título, descripción y etiquetas tecnológicas.
+
+**Proyecto 01 — Predictive Analytics**
+- Categoría: `PREDICTIVE MODELING`.
+- Descripción: `Un recorrido demostrativo desde la exploración de datos hasta un modelo predictivo y la interpretación de sus resultados.`
+- Etiquetas: Python, Machine Learning, Data Viz.
+- Icono sugerido: gráfica o análisis predictivo.
+
+**Proyecto 02 — Business Intelligence Dashboard**
+- Categoría: `DECISION SYSTEMS`.
+- Descripción: `Diseño conceptual de un tablero ejecutivo para explorar indicadores de desempeño y detectar oportunidades operativas.`
+- Etiquetas: Power BI, KPI Design, Analytics.
+- Icono sugerido: dashboard o capas de información.
+
+**Proyecto 03 — Data Engineering & Automation**
+- Categoría: `DATA PIPELINES`.
+- Descripción: `Pipeline de ejemplo para integrar, transformar y validar información mediante procesos reproducibles.`
+- Etiquetas: Python, SQL, Automation.
+- Icono sugerido: flujo de trabajo o automatización.
+
+Los recursos gráficos de los proyectos deben construirse con elementos CSS: anillos, iconos, gradientes oscuros y pequeños índices. No inventes capturas de productos reales ni resultados de negocio.
+
+Incluye el aviso:
+`Proyectos demostrativos. Los escenarios y datos son ilustrativos; no representan clientes ni resultados reales.`
+
+### E. Servicios y capacidades
+
+Identificador: `servicios`.
+
+Kicker:
+`03 / CAPACIDADES` y `FROM INSIGHT TO IMPACT`.
+
+Titular:
+`Resolver mejor. Decidir con claridad.`
+
+Descripción:
+`Capacidades que conectan análisis, tecnología y objetivos de negocio.`
+
+Crea cuatro tarjetas:
+
+1. **Data Analytics**
+   - `Exploración, limpieza y análisis de datos para encontrar patrones y convertir preguntas en respuestas accionables.`
+
+2. **Machine Learning**
+   - `Modelos predictivos y clasificación con evaluación transparente y enfoque en problemas concretos.`
+
+3. **Business Intelligence**
+   - `Dashboards e indicadores que conectan el desempeño diario con decisiones estratégicas.`
+
+4. **Automation**
+   - `Optimización de tareas repetitivas y flujos de información para trabajar con mayor consistencia.`
+
+Cada tarjeta incluye icono, número, título, descripción y un acento visual al pasar el cursor. En escritorio se distribuyen en cuatro columnas y en pantallas pequeñas se adaptan a dos columnas o una columna según el ancho disponible.
+
+### F. Stack tecnológico
+
+Kicker:
+`04 / STACK TECNOLÓGICO` y `TOOLS ARE A MEANS, NOT THE END`.
+
+Titular:
+`El stack detrás de cada solución.`
+
+Muestra las tecnologías como chips o etiquetas individuales, no como barras de porcentaje ni niveles de dominio inventados:
+
+- Python.
+- SQL.
+- React.
+- TypeScript.
+- Power BI.
+- Git.
+- GitHub.
+- Machine Learning.
+
+Cada etiqueta puede llevar un índice monoespaciado. El conjunto debe ser visualmente ordenado y adaptable a diferentes tamaños de pantalla.
+
+### G. Contacto
+
+Identificador: `contacto`.
+
+Kicker:
+`05 / CONTACTO` y `OPEN FOR NEW IDEAS`.
+
+Etiqueta:
+`LET'S BUILD SOMETHING MEANINGFUL`.
+
+Titular:
+`Los buenos proyectos comienzan con una pregunta.`
+
+Texto:
+`¿Tienes un reto de datos o una idea que merece explorarse? Conversemos.`
+
+Incluye un enlace de correo con asunto prellenado:
+`Conversemos sobre un proyecto`.
+
+Añade accesos a LinkedIn y GitHub.
+
+IMPORTANTE: los datos actuales son marcadores de posición:
+- Correo: `hello@example.com`.
+- LinkedIn: `https://www.linkedin.com/`.
+- GitHub: `https://github.com/`.
+
+Centraliza estos valores en `src/data/portfolio.ts` para que el propietario pueda reemplazarlos fácilmente. No inventes datos de contacto reales ni afirmes que esos perfiles pertenecen a una persona específica.
+
+Incluye una nota interna o microcopy que indique dónde editar los datos de contacto.
+
+### H. Footer
+
+Crea un footer minimalista con:
+
+- Marca `D.` y `DATA INTELLIGENCE`.
+- Año actual generado dinámicamente.
+- Frase `DESIGNED WITH CURIOSITY. BUILT WITH DATA.`.
+- Enlace para volver al inicio.
+- Separación mediante líneas finas y tonos discretos.
+
+## 6. Componentes y organización del código
+
+Mantén componentes reutilizables y responsabilidades claras. Una estructura de referencia:
+
+```text
+proyecto_prueba/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Services.tsx
+│   │   ├── Technologies.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── data/
+│   │   └── portfolio.ts
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── tailwind.config.js
+├── postcss.config.js
+├── README.md
+└── .gitignore
+```
+
+Puedes conservar una estructura distinta si el repositorio ya tiene una arquitectura funcional. No dividas componentes únicamente por cumplir un árbol de carpetas: prioriza legibilidad, mantenibilidad y consistencia.
+
+Centraliza proyectos, servicios, tecnologías y datos de contacto en un módulo de datos, como `src/data/portfolio.ts`.
+
+## 7. Animación e interacción
+
+Utiliza GSAP y ScrollTrigger con moderación:
+
+- Entrada escalonada de los elementos del Hero.
+- Aparición suave del visual abstracto.
+- Movimiento orbital lento de las órbitas del Hero.
+- Revelado progresivo de secciones al entrar en el viewport.
+- Transiciones discretas en tarjetas, chips y enlaces.
+
+Requisitos:
+- Respeta `prefers-reduced-motion: reduce`; desactiva las animaciones no esenciales si está activo.
+- Limpia las instancias de GSAP y ScrollTrigger al desmontar componentes.
+- Evita animaciones que provoquen saltos de layout o dificulten leer.
+- No bloquees la navegación ni la interacción mientras se ejecutan animaciones.
+- Mantén una experiencia fluida en dispositivos móviles.
+
+## 8. Responsive design y accesibilidad
+
+Diseña mobile-first y comprueba al menos:
+
+- Móvil pequeño (320–375 px).
+- Móvil estándar (390–430 px).
+- Tablet (768 px).
+- Escritorio (1024–1440 px).
+
+Comportamiento esperado:
+- Navbar adaptable y menú móvil funcional.
+- Hero en una columna en móvil.
+- Pilares de perfil apilados.
+- Proyectos con arte, texto y etiquetas reorganizados sin desbordamientos.
+- Tarjetas de servicios en una o dos columnas según el ancho.
+- Chips tecnológicos con salto de línea.
+- Contacto y footer legibles y utilizables con una mano.
+
+Accesibilidad:
+- Usa elementos HTML semánticos.
+- Añade etiquetas accesibles a botones sin texto visible.
+- Usa `aria-expanded` en el botón del menú móvil.
+- Mantén estados de foco visibles.
+- Asegura contraste suficiente.
+- No comuniques información únicamente mediante color.
+- Proporciona textos alternativos cuando existan imágenes informativas.
+- Verifica navegación por teclado.
+
+## 9. Rendimiento y calidad
+
+- Evita dependencias innecesarias.
+- No cargues librerías pesadas para crear efectos que pueden resolverse con CSS.
+- Evita renders y cálculos innecesarios.
+- Mantén el CSS organizado y las variables de diseño centralizadas.
+- No uses imágenes externas si no aportan valor al concepto; el Hero abstracto debe ser CSS.
+- Comprueba que no existan errores de TypeScript, consola o rutas.
+- Verifica que los enlaces internos conduzcan a secciones existentes.
+- No incluyas formularios que aparenten enviar información si no hay backend que los procese.
+
+## 10. GitHub — publicación
+
+Utiliza el repositorio existente:
+
+`Above02/proyecto_prueba`
+
+Antes de escribir:
+1. Inspecciona la rama y los archivos actuales.
+2. Identifica el stack y los componentes existentes.
+3. Revisa los cambios pendientes.
+4. Conserva el historial y la estructura funcional.
+
+Al finalizar:
+1. Ejecuta `npm install` si corresponde.
+2. Ejecuta `npm run build`.
+3. Corrige los errores de compilación y tipos.
+4. Revisa el diff y evita incluir archivos sensibles.
+5. Publica los cambios en la rama `main`.
+6. Utiliza un mensaje de commit descriptivo, por ejemplo:
+   `feat: build Data Intelligence portfolio`.
+
+No crees otro repositorio, no cambies el propietario y no reemplaces el remoto. No afirmes que un commit se publicó si GitHub no confirma la operación.
+
+## 11. Vercel — despliegue
+
+Utiliza el proyecto Vercel existente:
+
+`proyecto_prueba`
+
+Conserva su conexión con GitHub y no crees un segundo proyecto.
+
+Después de publicar en GitHub:
+1. Comprueba que Vercel detecte el commit de `main`.
+2. Revisa que se inicie el deployment.
+3. Comprueba el resultado de la compilación.
+4. Consulta los logs si hay errores.
+5. Corrige los problemas que estén dentro del alcance.
+6. Confirma que exista un Production Deployment en estado exitoso.
+7. Recupera y verifica la URL pública.
+
+Configuración esperada para Vite, solo si el proyecto actual no tiene ya una configuración válida:
+- Framework: Vite.
+- Build command: `npm run build`.
+- Output directory: `dist`.
+- Install command: `npm install`.
+- Production branch: `main`.
+
+No confundas una URL de Preview con la URL de producción. No declares el proyecto publicado hasta que el deployment de producción esté confirmado.
+
+## 12. README y mantenimiento
+
+Documenta:
+- Qué es el proyecto y cuál es su objetivo.
+- Tecnologías utilizadas.
+- Requisitos e instalación.
+- Comandos para desarrollo y compilación.
+- Estructura de carpetas.
+- Dónde editar proyectos, servicios y tecnologías.
+- Dónde actualizar correo, LinkedIn y GitHub.
+- Cómo ajustar colores y tipografías.
+- Cómo funciona la navegación y las animaciones.
+- Cómo se conecta GitHub con Vercel.
+- URL de producción, únicamente cuando esté verificada.
+
+## 13. Reporte final
+
+Entrega un resumen verificable con:
+1. Archivos creados y modificados.
+2. Funcionalidades implementadas.
+3. Stack tecnológico.
+4. Resultado de `npm run build`.
+5. Errores corregidos y asuntos pendientes.
+6. Rama y commit publicado.
+7. Estado real del deployment de Vercel.
+8. URL pública de producción, si está confirmada.
+
+Si algo no se puede completar, explica qué falta. No inventes resultados, clientes, datos de contacto, pruebas ni estados de despliegue.
+
+## INSTRUCCIÓN FINAL
+
+Inspecciona primero el repositorio existente `Above02/proyecto_prueba`. Construye o mejora el portafolio DATA INTELLIGENCE siguiendo esta especificación, conserva la infraestructura existente, publica en `main` y utiliza el proyecto Vercel ya conectado para obtener un despliegue de producción verificable.
+
+El resultado debe sentirse como un laboratorio editorial de datos: sobrio, tecnológico, preciso y profesional; no como una plantilla genérica.
