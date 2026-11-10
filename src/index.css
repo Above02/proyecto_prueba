@@ -18,3 +18,8 @@
 .prompt-resource>a:hover{background:#dceaff;color:#101a29}
 .prompt-resource>a span{font:9px var(--mono);opacity:.7;border-left:1px solid currentColor;padding-left:8px}
 @media(max-width:640px){.prompt-resource{align-items:flex-start;flex-direction:column}.prompt-resource>a{width:100%;justify-content:center}}
+
+.nav-prompt{display:flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid rgba(157,197,255,.55);color:#dceaff;font-size:11px;font-weight:700;white-space:nowrap;transition:background .2s,color .2s}
+.nav-prompt:hover{background:#dceaff;color:#101a29}
+#prompt-descarga{scroll-margin-top:100px}
+@media(max-width:640px){.nav-prompt{margin-left:auto;margin-right:10px;padding:8px 9px;font-size:9px}.nav-cta{display:none}.menu-toggle{order:3}}
