@@ -1,0 +1,43 @@
+PROMPT DE REFERENCIA — DATA INTELLIGENCE / PORTAFOLIO
+Versión reconstruida a partir del sitio publicado. No es una transcripción literal del prompt original.
+
+Actúa como diseñador UX/UI y desarrollador frontend senior especializado en portafolios tecnológicos. Diseña y construye un sitio web de portafolio conceptual para un perfil de Data Intelligence, enfocado en ciencia de datos, analítica, inteligencia artificial y soluciones tecnológicas.
+
+OBJETIVO
+Presentar de forma profesional y contemporánea un perfil orientado a convertir datos en decisiones inteligentes. La página debe comunicar pensamiento analítico, rigor, claridad y dominio tecnológico sin recurrir a plantillas genéricas.
+
+DIRECCIÓN VISUAL
+- Estética tecnológica, editorial, minimalista y sofisticada.
+- Fondo azul muy oscuro/casi negro, superficies ligeramente más claras, texto gris frío y acentos azul claro.
+- Tipografía sans-serif moderna combinada con detalles monoespaciados para etiquetas técnicas.
+- Composición con mucho espacio negativo, líneas finas, pequeños indicadores, numeración y microtextos.
+- Hero con visualización abstracta de datos: núcleo, anillos orbitales, brillos y geometría CSS; evitar depender de imágenes de stock.
+- Animaciones sutiles de entrada y movimiento, con respeto a prefers-reduced-motion.
+- Diseño responsive, especialmente cuidado en pantallas móviles.
+
+ESTRUCTURA
+1. Navbar con marca “DATA INTELLIGENCE”, navegación a Inicio, Perfil, Proyectos, Servicios y Contacto.
+2. Hero con titular “Transformando datos en decisiones inteligentes”, descripción, botones para explorar proyectos y contactar, y una visualización abstracta de datos.
+3. Perfil con introducción y tres pilares: Data Science & Machine Learning, Business Intelligence, Statistical Modeling & Analytics.
+4. Proyectos seleccionados presentados como casos conceptuales con categoría, descripción, etiquetas y recursos gráficos.
+5. Servicios/capacidades en tarjetas: análisis de datos, inteligencia artificial, business intelligence y automatización/tecnología.
+6. Stack tecnológico presentado como chips o etiquetas.
+7. Contacto con llamada a la acción, correo y enlaces sociales configurables.
+8. Footer minimalista con identidad y navegación de regreso al inicio.
+
+CONTENIDO Y HONESTIDAD
+- Utiliza textos demostrativos editables y evita inventar clientes, certificaciones o resultados.
+- Aclara que los proyectos y escenarios son conceptuales/demostrativos cuando corresponda.
+- Centraliza datos de contacto, proyectos, servicios y tecnologías en módulos de datos separados.
+- No inventes direcciones, correos ni perfiles reales.
+
+TECNOLOGÍA
+- React + TypeScript + Vite.
+- CSS personalizado y Tailwind si aporta valor.
+- lucide-react para iconos.
+- GSAP y ScrollTrigger para animaciones suaves y controladas.
+- Componentes funcionales, estructura clara, accesibilidad básica y buen rendimiento.
+- No añadas dependencias innecesarias.
+
+ENTREGA
+Construye una página completa, responsive y lista para desplegar. Asegura navegación funcional, enlaces editables, jerarquía visual consistente y compilación sin errores. Incluye estados hover/focus y respeta la preferencia de movimiento reducido.
