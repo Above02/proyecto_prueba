@@ -15,7 +15,7 @@ function Navbar() {
   return <header className="navbar"><a className="brand" href="#inicio" onClick={() => setOpen(false)}><span className="brand-mark">D<span>.</span></span><span>DATA<br/>INTELLIGENCE</span></a>
     <button className="menu-toggle" aria-label={open ? 'Cerrar menú' : 'Abrir menú'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X/> : <Menu/>}</button>
     <nav className={open ? 'nav-links is-open' : 'nav-links'} aria-label="Navegación principal">{nav.map(item => <a key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</a>)}</nav>
-    <a className="nav-cta" href="#contacto">Hablemos <ArrowUpRight size={15}/></a>
+    <a className="nav-prompt" href="#prompt-descarga">Descargar prompt <ArrowDown size={14}/></a><a className="nav-cta" href="#contacto">Hablemos <ArrowUpRight size={15}/></a>
   </header>
 }
 
@@ -65,7 +65,7 @@ function Contact() {
 }
 
 function Footer() {
-  return <><footer className="footer section-wrap"><a className="brand" href="#inicio"><span className="brand-mark">D<span>.</span></span><span>DATA<br/>INTELLIGENCE</span></a><span>© {new Date().getFullYear()} DATA INTELLIGENCE</span><span>DESIGNED WITH CURIOSITY. BUILT WITH DATA.</span><a href="#inicio" aria-label="Volver al inicio" className="back-top"><ArrowUpRight size={17}/></a></footer><div className="prompt-resource section-wrap"><div><strong>¿Quieres crear un portafolio como este?</strong><span>Descarga el prompt de referencia y úsalo como punto de partida con tu IA favorita.</span><small>Versión reconstruida a partir del proyecto publicado.</small></div><a href="/prompts/prompt-proyecto-prueba.txt" download><FileDown size={17}/> Descargar prompt <span>TXT</span></a></div></>
+  return <><footer className="footer section-wrap"><a className="brand" href="#inicio"><span className="brand-mark">D<span>.</span></span><span>DATA<br/>INTELLIGENCE</span></a><span>© {new Date().getFullYear()} DATA INTELLIGENCE</span><span>DESIGNED WITH CURIOSITY. BUILT WITH DATA.</span><a href="#inicio" aria-label="Volver al inicio" className="back-top"><ArrowUpRight size={17}/></a></footer><div className="prompt-resource section-wrap" id="prompt-descarga"><div><strong>¿Quieres crear un portafolio como este?</strong><span>Descarga la especificación ampliada con identidad visual, secciones, contenido, stack, accesibilidad y despliegue.</span><small>Prompt ampliado de referencia · Reconstruido a partir del proyecto publicado.</small></div><a href="/prompts/prompt-proyecto-prueba.txt" download><FileDown size={17}/> Descargar prompt completo <span>TXT</span></a></div></>
 }
 
 export default function App() {
