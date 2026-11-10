@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowDown, ArrowRight, ArrowUpRight, BarChart3, BrainCircuit, Code2, Database, Github, Layers3, Linkedin, Menu, Network, Workflow, X, Zap } from 'lucide-react'
+import { ArrowDown, ArrowRight, ArrowUpRight, BarChart3, BrainCircuit, Code2, Database, FileDown, Github, Layers3, Linkedin, Menu, Network, Workflow, X, Zap } from 'lucide-react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { contact, projects, services, technologies } from './data/portfolio'
@@ -65,7 +65,7 @@ function Contact() {
 }
 
 function Footer() {
-  return <footer className="footer section-wrap"><a className="brand" href="#inicio"><span className="brand-mark">D<span>.</span></span><span>DATA<br/>INTELLIGENCE</span></a><span>© {new Date().getFullYear()} DATA INTELLIGENCE</span><span>DESIGNED WITH CURIOSITY. BUILT WITH DATA.</span><a href="#inicio" aria-label="Volver al inicio" className="back-top"><ArrowUpRight size={17}/></a></footer>
+  return <><footer className="footer section-wrap"><a className="brand" href="#inicio"><span className="brand-mark">D<span>.</span></span><span>DATA<br/>INTELLIGENCE</span></a><span>© {new Date().getFullYear()} DATA INTELLIGENCE</span><span>DESIGNED WITH CURIOSITY. BUILT WITH DATA.</span><a href="#inicio" aria-label="Volver al inicio" className="back-top"><ArrowUpRight size={17}/></a></footer><div className="prompt-resource section-wrap"><div><strong>¿Quieres crear un portafolio como este?</strong><span>Descarga el prompt de referencia y úsalo como punto de partida con tu IA favorita.</span><small>Versión reconstruida a partir del proyecto publicado.</small></div><a href="/prompts/prompt-proyecto-prueba.txt" download><FileDown size={17}/> Descargar prompt <span>TXT</span></a></div></>
 }
 
 export default function App() {
